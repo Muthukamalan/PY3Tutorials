@@ -1,0 +1,7 @@
+{
+    "[python]": {
+        "diffEditor.ignoreTrimWhitespace": false,
+        "editor.defaultColorDecorators": "never",
+    },
+    "python.analysis.autoImportCompletions": false
+}
