@@ -1,6 +1,6 @@
 # DataSet and DataLoader from scratch
 
-```mermid
+```mermaid
 classDiagram
     class Dataset{
         <<abstract>>
