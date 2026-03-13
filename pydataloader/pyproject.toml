@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=65", "wheel"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "dataset-from-scratch-project"
+version = "1.1.0"
+description = "Example dataset utilities"
+readme = "README.md"
+requires-python = ">=3.10"
+
+dependencies = [
+    "datasets>=4.6.1",
+    "numpy>=2.2.6",
+    "Pillow>=12.1.1"
+]
+
+
+[project.optional-dependencies]
+dev = [
+    "ruff>=0.4.0"
+]
+
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+fix = true
+
+
+[tool.ruff.lint]
+select = [
+    "E",   # pycodestyle errors
+    "F",   # pyflakes
+    "I",   # import sorting
+]
+ignore = [
+    "E501" # ignore line-length warnings
+]
+
+
+[tool.ruff.lint.isort]
+combine-as-imports = true
+force-sort-within-sections = true
+known-first-party = ["text_dataset_project"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+line-ending = "auto"
