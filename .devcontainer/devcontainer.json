@@ -23,5 +23,10 @@
   },
   "onCreateCommand": "echo OnCreateCmd",
   "postStartCommand": "echo postStartCmd",
-  "remoteUser": "root"
+  // "remoteUser": "root",
+  "mounts": [
+    "source=/home/muthu/DATA,target=/home/muthu/DATA,type=bind,consistency=cached"
+    
+  ],
+  "workspaceFolder": "/"
 }
