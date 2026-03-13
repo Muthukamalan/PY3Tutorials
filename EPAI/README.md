@@ -1,4 +1,6 @@
 # Setup
+- [X] conda
+- [X] UV
 
 # Pre-Requisites
 - [Python3 by Boot.dev](https://youtu.be/4M87qBgpafk?si=MH3ZjR2OkevPYiQK)
