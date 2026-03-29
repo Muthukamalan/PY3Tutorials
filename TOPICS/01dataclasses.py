@@ -10,17 +10,11 @@ filterwarnings("ignore")
 
 # ====================== reduce boilerplate =================================================================
 @dataclass
-class User:
+class Users:
     """A user in the system."""
     name: str
     email: str
     age: int
-
-
-user1 = User(name="Alice", email="alice@example.com", age=1000)
-print(user1)
-
-# ------------------------------------------------------------------------------------------------------------
 
 class NormalUser:
     def __init__(self,name,email,age):
@@ -34,6 +28,13 @@ class NormalUser:
         if not isinstance(other, NormalUser):
             return NotImplemented
         return (self.name, self.email, self.age) == (other.name, other.email, other.age)
+
+
+user1 = Users(name="Alice", email="alice@example.com", age=1000)
+print(user1)
+
+# ------------------------------------------------------------------------------------------------------------
+
 
 user2 = NormalUser("abdhul","isaac@proton.mail",age=90)
 print(user2)
