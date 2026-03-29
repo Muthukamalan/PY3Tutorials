@@ -3,5 +3,7 @@
         "diffEditor.ignoreTrimWhitespace": false,
         "editor.defaultColorDecorators": "never",
     },
-    "python.analysis.autoImportCompletions": false
+    "python.analysis.autoImportCompletions": false,
+    "python.analysis.typeCheckingMode": "standard",
+    "chat.disableAIFeatures": true
 }
