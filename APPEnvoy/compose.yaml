@@ -1,0 +1,14 @@
+services:
+  fastapi:
+    build:
+      context: ./app
+    expose:
+      - "8000"   
+  envoy:
+    image: envoyproxy/envoy:v1.30-latest
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./envoy/envoy.yaml:/etc/envoy/envoy.yaml
+    depends_on:
+      - fastapi 
