@@ -5,5 +5,5 @@
     },
     "python.analysis.autoImportCompletions": false,
     "python.analysis.typeCheckingMode": "standard",
-    "chat.disableAIFeatures": true
+    "chat.disableAIFeatures": true,
 }
